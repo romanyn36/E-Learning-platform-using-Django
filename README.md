@@ -1,9 +1,9 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="E Learning Platform Using Django" />
+  <img src="images/demo.gif" alt="E Learning Platform Using Django" />
 
   &#xa0;
 
-  <a href="images/demo.mp4">Demo</a>
+  <!-- <a href="images/demo.gif">Demo</a> -->
 </div>
 
 <h1 align="center">E Learning Platform Using Django</h1>
@@ -34,11 +34,14 @@
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="#heart-contact-me">Contact</a>
 
+</p>
+<!-- images -->
 <div style="display: flex; justify-content: center;">
     <img src="images/h0.png" alt="h0" style="width: 70%; max-width: 800px;" />
 </div>
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px;">
+ <img src="images/h0.png" alt="h0" style="width: 150px; margin: 10px;" />
     <img src="images/desc.png" alt="desc" style="width: 150px; margin: 10px;" />
     <img src="images/home.png" alt="home" style="width: 150px; margin: 10px;" />
     <img src="images/how.png" alt="how" style="width: 150px; margin: 10px;" />
@@ -54,7 +57,8 @@
 <br>
 
 ## :dart: About ##
-this project is simple example on how to use Django to build an e-learning platform. we applied many django functionalities i mentioned below.
+this project is (backend) example on how to use Django to build an e-learning platform. we applied many django functionalities i mentioned below.
+note: this project is not completed yet,and not front-end optimized, it just backend example.
 <hr>
   This project is an e-learning platform that allows students to browse and apply for courses. ande manage courses and students using the Django admin panel. The project also includes a simple authentication system that allows students to sign up, log in, and log out. The project uses  RESTful API that allows students to browse and apply for courses. The project also uses JWT to authenticate and authorize students to access the API.
 
