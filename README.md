@@ -8,6 +8,7 @@
 
 <h1 align="center">E Learning Platform Using Django</h1>
 
+
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/romanyn36/e-learning-platform-using-django?color=56BEB8">
 
@@ -33,6 +34,23 @@
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/romanyn36" target="_blank">Author</a>
 </p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="images/h0.png" alt="h0" style="width: 70%; max-width: 800px;" />
+</div>
+
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px;">
+    <img src="images/desc.png" alt="desc" style="width: 150px; margin: 10px;" />
+    <img src="images/home.png" alt="home" style="width: 150px; margin: 10px;" />
+    <img src="images/how.png" alt="how" style="width: 150px; margin: 10px;" />
+    <img src="images/mycourse.png" alt="mycourse" style="width: 150px; margin: 10px;" />
+    <img src="images/profile.png" alt="profile" style="width: 150px; margin: 10px;" />
+    <img src="images/signin.png" alt="signin" style="width: 150px; margin: 10px;" />
+    <img src="images/signup.png" alt="signup" style="width: 150px; margin: 10px;" />
+</div>
+
+
+
 
 <br>
 
