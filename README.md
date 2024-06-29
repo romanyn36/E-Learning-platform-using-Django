@@ -32,8 +32,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/romanyn36" target="_blank">Author</a>
-</p>
+  <a href="#heart-contact-me">Contact</a>
 
 <div style="display: flex; justify-content: center;">
     <img src="images/h0.png" alt="h0" style="width: 70%; max-width: 800px;" />
@@ -109,8 +108,16 @@ $ python manage.py runserver
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-Made with :heart: by <a href="https://github.com/romanyn36" target="_blank">Romani</a>
+## :heart: contact me ##
+Made with :heart: by Romani 
+<p align="center">
+ 
+<!-- icons  --><a href="https://github.com/romanyn36" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="romanyn36" height="30" width="40" /></a> <a href="https://linkedin.com/in/romanyn36" target="blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="romanyn36" height="30" width="40" /></a> <a href="https://fb.com/romanyn3" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="romanyn36" height="30" width="40" /></a> <a href="https://twitter.com/romanyn36" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="romanyn36" height="30" width="40" /> <a href="https://stackoverflow.com/users/17348975/romani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="romanyn36" height="30" width="40" /></a><a href="https://kaggle.com/romanyn36" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="romanyn36" height="30" width="40" /></a> <a href="https://www.instagram.com/romanyn36" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="romanyn36" height="30" width="40" /></a> <a href="https://www.leetcode.com/romanyn36" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="romanyn36" height="30" width="40" /></a> <a href="https://dev.to/romanyn36" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="romanyn36" height="30" width="40" /></a>
 
-&#xa0;
+<!-- <a href="https://www.buymeacoffee.com/romanyn36" target="_blank" style="display: inline-block;">
+    <img src="https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-orange.svg?style=flat-square&logo=buymeacoffee" align="center"/>
+  </a> -->
+  
+</p>
 
 <a href="#top">Back to top</a>
