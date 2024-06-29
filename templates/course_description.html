@@ -1,0 +1,115 @@
+{% extends 'nav.html' %}
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="/Front/CSS/description.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .Desc {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .Desc img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .name {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .description {
+            text-align: justify;
+            margin-top: 10px;
+        }
+
+        .submit-button {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">Course Description</h1>
+    <div class="Desc">
+        <img id="course_image" alt="Course Image" style="width: 100%; max-width: 300px; height: auto;">
+        <h2 id="course_name" class="name">Course Title</h2>
+        <p id="course_description" class="description">Loading course description...</p>
+        <a id="request_link" href="#" class="submit-button">Request Course</a>
+    </div>
+
+    <script>
+        // Get the course ID from the URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const courseId = urlParams.get('course_id');
+        console.log('Course ID:', courseId);
+
+        // Set the request link to include the course ID
+        document.getElementById('request_link').href = `/request_page/?course_id=${courseId}`;
+
+        // Make an API call to fetch the full course data using the courseId
+        fetch(`/get_course/?course_id=${courseId}`)
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response data
+                const course = data.course;
+                console.log(course.course_id);
+                document.getElementById('course_name').innerText = course.course_name;
+                document.getElementById('course_description').innerText = course.description;
+                document.getElementById('course_image').src = course.image_url;
+            })
+            .catch(error => console.error('Error fetching course data:', error));
+
+
+            // if there is no parameter in the URL, hide request link
+            if (!courseId) {
+                document.getElementById('request_link').style.display = 'none';
+            }
+    </script>
+</body>
+
+</html>
+{% endblock %}

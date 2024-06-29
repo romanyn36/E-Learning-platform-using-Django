@@ -1,0 +1,86 @@
+{% extends 'nav.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5">
+        <main>
+            <!-- Profile Information -->
+            <section class="profile-info mb-5 bg-light p-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile Information</h5>
+                        <div class="row mb-3">
+                            <label for="name" class="col-sm-3 col-form-label">Name:</label>
+                            <div class="col-sm-9">
+                                <span id="name" class="form-control-plaintext"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="username" class="col-sm-3 col-form-label">Username:</label>
+                            <div class="col-sm-9">
+                                <span id="username" class="form-control-plaintext"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="email" class="col-sm-3 col-form-label">Email:</label>
+                            <div class="col-sm-9">
+                                <span id="email" class="form-control-plaintext"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="address" class="col-sm-3 col-form-label">Address:</label>
+                            <div class="col-sm-9">
+                                <span id="address" class="form-control-plaintext"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="number" class="col-sm-3 col-form-label">Phone Number:</label>
+                            <div class="col-sm-9">
+                                <span id="number" class="form-control-plaintext"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+        </main>
+    </div>
+
+    <script>
+        window.onload = function () {
+            getStudentInfo();
+        }
+
+        var getStudentInfo = () => {
+            var token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = "{% url 'login_page' %}";
+            }
+
+            fetch('http://127.0.0.1:8000/student_info/', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                },
+            })
+                .then(response => response.json())
+                .then(data => {
+                    var student = data.student;
+                    document.getElementById('name').textContent = student.name;
+                    document.getElementById('email').textContent = student.email;
+                    document.getElementById('username').textContent = student.username;
+                    document.getElementById('address').textContent = student.address;
+                    document.getElementById('number').textContent = student.number;
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        }
+
+        var logout = () => {
+            localStorage.removeItem('token');
+            window.location.href = "{% url 'login_page' %}";
+        }
+    </script>
+{% endblock %}

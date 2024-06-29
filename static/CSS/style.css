@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  background-image: url('decoration-colorful-flowers-with-copy-space.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2.CG {
+  text-align: center;
+  align-items: center;
+  color: #44034b;
+  font-size: 25px;
+  font-family: 'Calligraffitti', cursive;
+  text-shadow: 5px 5px 0px #90B1E0;
+
+}
+
+a {
+  text-decoration: none;
+}
+div.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: inline-table;
+  width: 350px;
+  height: 400px; 
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+  background-color: white;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+div.gallery:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+/* Update for responsiveness */
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  div.gallery {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Ensure images are responsive */
+div.gallery img {
+  width: 100%;
+  height: 220px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+/* Ensure buttons are responsive */
+.button-29 {
+  width: 100%; /* Adjust button width for smaller screens */
+  font-size: 16px; /* Adjust font size for smaller screens */
+}
+
+/* Adjust padding and margins for better spacing */
+div.gallery {
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+div.desc {
+  font-weight: bold;
+  /* display: flex; */
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(46, 42, 94);
+  outline: none;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+div {
+  justify-content: center;
+  text-align: center;
+}
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-color: #185fa5;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* NAV style*/
+
+nav {
+  background-color: #f2f2f2;
+  padding: 8px 0;
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(46, 42, 94);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* contact */
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 59px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px #000;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+  background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%,
+      #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+  background: #333;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+  background: #ff0000;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+  color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+  color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+  color: #333;
+}
+
+.wrapper .button:nth-child(5) span {
+  color: #ff0000;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #346a99;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+section {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#footer {
+  background-color: #346a99;
+  color: #fff;
+  padding: 30px 0;
+}
+
+#footer p {
+  margin-bottom: 0;
+}
+
+#footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#footer a:hover {
+  color: #fff;
+}

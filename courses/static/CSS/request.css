@@ -1,0 +1,85 @@
+h1, h2 {
+  text-align: center;
+  color: rgb(21, 21, 80);
+}
+
+#reason, #course_level {
+  margin: 20px 0;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(21, 21, 80);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.submit-button:hover {
+  background-color: rgb(21, 21, 80);
+}
+
+.Desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #b8d3fb;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 4px 2px 4px rgb(21, 21, 80);
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #f2f2f2;
+  padding: 8px 0;
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(46, 42, 94);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:not(.user-icon):hover {
+  background-color: #b4b5d5;
+}
+
+nav .user-icon {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #0c0750;
+  text-align: left;
+}
+
+.user-icon i {
+  font-size: 35px;
+  padding-right: 10px;
+}
+
+.user-icon:hover i {
+  background-color: transparent !important;
+}
+
+.fa fa-user {
+  text-align: left;
+}

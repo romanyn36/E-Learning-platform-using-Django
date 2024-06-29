@@ -1,0 +1,44 @@
+
+{% extends 'nav.html' %}
+
+{% block content %}
+{% load static %}
+<section id="about">
+    <div class="container">
+        <img src="{% static 'images/back.jpg' %}" alt="About Us" style="width: 400px;height: 300px;">
+        <h1>About Us</h1>
+        <div class="section-content">
+            <p>We are an E-Learning website that provides courses in various fields such as programming, design,
+                marketing, and more. Our instructors are experienced professionals dedicated to helping you learn
+                and improve your skills.</p>
+        </div>
+    </div>
+</section>
+
+<section id="courses">
+    <div class="container">
+        <h1>Courses</h1>
+        <div id="course-container" class="w-100">
+            <!-- Courses will be dynamically added here -->
+            <script src="{% static 'JS/script.js' %}"></script>
+        </div>
+    </div>
+</section>
+
+<section id="subscribe">
+    <div class="container">
+        <h1>How it works</h1>
+        <div class="section-content">
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><span style="font-size: 20px;">Browse our courses</span></li>
+                <li><span style="font-size: 20px;">Choose the course you want</span></li>
+                <li><span style="font-size: 20px;">In Description page click on "Request" button</span></li>
+                <li><span style="font-size: 20px;">Fill the form and submit it</span></li>
+                <li><span style="font-size: 20px;">Wait for the teacher to accept your request</span></li>
+                <li><span style="font-size: 20px;">Start learning</span></li>
+            </ul>
+            <p>Note that you can't request a course if you are not signed in.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

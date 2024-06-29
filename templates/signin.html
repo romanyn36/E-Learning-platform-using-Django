@@ -1,0 +1,76 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+</head>
+
+<body>
+    <div class="outer-container mt-5 ">
+        <div style="height: 100px;"></div>
+
+        <div class="container_log">
+            <h2>Login</h2>
+            <form id="signin-form" method="post">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">@</span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="password" placeholder="Username">
+                        <label for="password">Username</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn logbtn">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="{% url 'signup_page' %}">Sign up now</a></p>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("signin-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            const formData = new FormData();
+            formData.append("username", username);
+            formData.append("password", password);
+
+            fetch("http://127.0.0.1:8000/login/", {
+                method: "POST",
+                body: formData
+            }).then(response => response.json())
+                .then(data => {
+                    if (data["status"] === "success") {
+                        console.log("Token:", data["token"]);
+                        localStorage.setItem("token", data["token"]);
+                        window.location.href = "{% url 'index' %}";
+
+                    } else {
+                        alert("Invalid username or password");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("An error occurred while logging in");
+                });
+        });
+    </script>
+
+</body>
+
+</html>
+{% endblock %}
